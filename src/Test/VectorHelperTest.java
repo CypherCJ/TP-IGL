@@ -22,8 +22,13 @@ public class VectorHelperTest {
      * La méthode utilisée pour tester la méthode {@code int[] sum}
      */
     @Test
-    public void testSum() throws DifferentLengthException{
-        assertArrayEquals(new int[] {6, 8, 10, 12}, sum(new int[] {1, 2, 3, 4}, new int[] {5, 6, 7, 8}));
+    public void testSum(){
+        try {
+            assertArrayEquals(new int[] {6, 8, 10, 12}, sum(new int[] {1, 2, 3, 4}, new int[] {5, 6, 7, 8}));
+        }
+        catch (DifferentLengthException e) {
+            fail("Les tailles des tableaux sont différentes");
+        }
     }
 
     /**
