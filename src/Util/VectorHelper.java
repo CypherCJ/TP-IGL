@@ -1,10 +1,6 @@
 package Util;
 
 /**
- * Created by Cypher on 10/13/2017.
- */
-
-/**
  * La classe qui permet de faire les traitements sur les vecteurs
  */
 public class VectorHelper {
