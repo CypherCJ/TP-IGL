@@ -6,10 +6,6 @@ import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 
 /**
- * Created by Cypher on 10/22/2017.
- */
-
-/**
  * La classe utilisée pour effectuer des tests unitaires sur les méthodes de la classe VectorHelper
  */
 public class VectorHelperTest {
