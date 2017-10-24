@@ -15,7 +15,7 @@ public class VectorHelperTest {
      */
     @Test
     public void testSort() {
-        assertArrayEquals(new int[] {0, 1, 5, 25, 100, 100}, sort(new int[] {100, 25, 100, 0, 5, 1}));
+        assertArrayEquals(new int[] {0, 1, 5, 25, 100, 120}, sort(new int[] {100, 25, 120, 0, 5, 1}));
     }
 
     /**
