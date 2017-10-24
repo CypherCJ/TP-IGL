@@ -1,0 +1,2 @@
+Ce dossier contient les librairies nécessaires pour faire fonctionner toutes les spécifications des IDE.
+Par exemple le JUnit 5 pour tariter les tests unitaires et d'autre bibliothèque contenant les méthodes 'Assert'.
