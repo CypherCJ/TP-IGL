@@ -15,15 +15,20 @@ public class VectorHelperTest {
      */
     @Test
     public void testSort() {
-        assertArrayEquals(new int[] {0, 1, 5, 25, 100, 120}, sort(new int[] {100, 25, 120, 0, 5, 1}));
+        assertArrayEquals(new int[] {0, 1, 5, 25, 90, 100}, sort(new int[] {100, 25, 90, 0, 5, 1}));
     }
 
     /**
      * La méthode utilisée pour tester la méthode {@code int[] sum}
      */
     @Test
-    public void testSum() throws DifferentLengthException{
-        assertArrayEquals(new int[] {6, 8, 10, 12}, sum(new int[] {1, 2, 3, 4}, new int[] {5, 6, 7, 8}));
+    public void testSum(){
+        try {
+            assertArrayEquals(new int[] {6, 8, 10, 12}, sum(new int[] {1, 2, 3, 4}, new int[] {5, 6, 7, 8}));
+        }
+        catch (DifferentLengthException e) {
+            fail("Les tailles des tableaux sont différentes");
+        }
     }
 
     /**
